@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script language="JavaScript">
+        let zmien=()=>
+        {REDvalue.innerHTML=RED.value
+        GREENvalue.innerHTML=RED.value
+        BLUEvalue.innerHTML=RED.value
+        wynik.style.background="rgb("+RED.value+" ,"+GREEN.value+" ,"+BLUE.value+")";};
+        RED.addEventListener("change",zmien);
+        GREEN.addEventListener("change",zmien);
+        BLUE.addEventListener("change",zmien);
+        </script>
+        
+<body>
+        <style>
+            .wynik
+            {width:200px;
+            height:200px;}
+        </style>
+    <form>
+        <input type="range" min=1 max=255 id="RED"><br>
+        <span id="REDvalue"> </span>
+        <input type="range" min=1 max=255 id="GREEN"><br>
+        <span id="GREENvalue"> </span>
+        <input type="range" min=1 max=255 id="BLUE"><br>
+        <span id="BLUEvalue"> </span>
+        <p id="wynik"></p>        
+    </form>
+</body>
+</html>
